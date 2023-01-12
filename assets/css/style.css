@@ -24,7 +24,7 @@ a {
 .btn {
   min-width: 98px;
   background: var(--primary-color);
-  border-radius: 8px;
+  border-radius: 12px;
   font-weight: 500;
   font-size: 1.4rem;
   text-align: center;
@@ -86,6 +86,7 @@ a {
 .navbar .action-btn {
   padding: 13px 16px;
   margin-left: 18px;
+  border-radius: 8px;
 }
 
 .hero {
@@ -129,4 +130,114 @@ a {
   position: absolute;
   bottom: 0;
   right: calc((100% - 1110px) / 2 - 100px);
+}
+
+/* CLIENT */
+.clients {
+  margin-top: 122px;
+}
+
+.clients .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients .desc {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  color: #7d8589;
+}
+
+.clients .images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  align-items: center;
+}
+
+.client-image {
+  cursor: pointer;
+}
+
+/* Guides */
+.guides {
+  margin-top: 200px;
+}
+
+.guides .sub-title {
+  position: relative;
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 1;
+  text-align: center;
+  color: #000339;
+}
+
+.guides .sub-title::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 41px;
+  height: 4px;
+  background: #000339;
+  border-radius: 12px;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.guides .desc {
+  margin: 20px auto 0px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.88;
+  text-align: center;
+  color: #5a6473;
+  width: 459px;
+  max-width: 100%;
+}
+
+.list-guide {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.guide-item {
+  text-align: center;
+  margin: 0px 70px;
+  list-style: none;
+}
+
+.guide-item .title {
+  margin-top: 26px;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: #3b3c45;
+}
+
+.guide-item .link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #0689ff;
+}
+
+.guide-item .link img {
+  margin-left: 8px;
+}
+
+.guide-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.guide-cta .btn {
+  min-width: 170px;
+  border-radius: 12px;
 }
