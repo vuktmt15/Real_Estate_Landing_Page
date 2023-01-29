@@ -44,6 +44,13 @@ a {
   margin-right: auto;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* HEADER */
 .header {
   background-color: #e5f0ff;
@@ -134,7 +141,8 @@ a {
 
 /* CLIENT */
 .clients {
-  margin-top: 122px;
+  margin-top: 79px;
+  padding: 43px 0px 66px;
 }
 
 .clients .row {
@@ -162,7 +170,8 @@ a {
 
 /* Guides */
 .guides {
-  margin-top: 200px;
+  margin-top: 41px;
+  padding: 120px 0px;
 }
 
 .guides .sub-title {
@@ -240,4 +249,255 @@ a {
 .guide-cta .btn {
   min-width: 170px;
   border-radius: 12px;
+}
+
+/* Features */
+.featured {
+  margin-top: 120px;
+  background-color: #f5fafe;
+  padding: 110px 0px;
+}
+
+.featured .sub-title {
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 1;
+  color: #000339;
+}
+
+.featured header .row {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured header .desc {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.88;
+  color: #5a6473;
+}
+
+.featured header .link {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #0689ff;
+}
+
+.featured header .link img {
+  margin-left: 4px;
+}
+
+.featured .list {
+  margin-top: 70px;
+  gap: 30px;
+  display: flex;
+}
+
+.featured .item {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.featured .item .thumb {
+  width: 100%;
+  height: 227px;
+  object-fit: cover;
+}
+
+.featured .item .body {
+  padding: 17px 20px 24px;
+  background: #fff;
+}
+
+.featured .item .title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1;
+  color: #000339;
+}
+
+.featured .item .desc {
+  --line-clamp: 3;
+  margin-top: 11px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #a3a6ab;
+  word-break: break-all;
+}
+
+.featured .item .info {
+  display: flex;
+  align-items: center;
+  margin-top: 21px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: #4d4d52;
+}
+
+.featured .item .info .label {
+  margin: 0px 22.7px 0px 8px;
+}
+
+/* Stats */
+.stats {
+  margin-top: 75px;
+  padding: 50px 0px;
+}
+
+.stats .content {
+  width: 1048px;
+}
+
+.stats .row {
+  display: flex;
+}
+
+.stats .img-block,
+.stats .info {
+  width: 50%;
+}
+
+.stats .img-block {
+  display: flex;
+  position: relative;
+}
+
+.stats-trend {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  box-shadow: 90px 85px 100px rgba(0, 0, 0, 0.06);
+  border-radius: 0px 0px 12px 12px;
+  padding: 45px 22px 40px;
+  width: 239px;
+}
+
+.stats-trend .value {
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: #000339;
+}
+
+.stats-trend .icon {
+  margin-left: auto;
+}
+
+.stats-trend .desc {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #a7a7a7;
+  margin-top: 8px;
+}
+
+.stats-trend .separate {
+  width: 193.62px;
+  height: 1.2px;
+  background: #e9e9e9;
+  margin-top: 25.51px;
+}
+
+.stats .avatar-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 26px;
+  gap: 16px 14px;
+  padding-left: 3px;
+}
+
+.stats .avatar-group {
+  display: flex;
+}
+
+.stats .avatar {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: -3px;
+}
+
+.stats .avatar-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color, blue);
+  border-radius: 50%;
+  font-weight: 450;
+  font-size: 0.8rem;
+  line-height: 9/8;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.stats .img-block .image {
+  display: block;
+  margin-left: auto;
+  width: 400px;
+  height: 460px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.stats .info {
+  padding: 79px 0px 0px 165px;
+}
+
+.stats .sub-title {
+  position: relative;
+  width: 269px;
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 1.29;
+  color: #000339;
+}
+
+.stats .sub-title::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 41px;
+  height: 4px;
+  left: 0px;
+  top: -10px;
+  background: #000339;
+  border-radius: 12px;
+}
+
+.stats .info .desc {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.88;
+  color: #5a6473;
+}
+
+.stats .row-qty {
+  margin-top: 110px;
+  justify-content: space-between;
+  padding: 0px 32px;
+}
+
+.stats .qty {
+  font-weight: 600;
+  font-size: 6.4rem;
+  line-height: 1;
+  color: #000000;
+}
+
+.stats .qty-desc {
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #7b8087;
 }
