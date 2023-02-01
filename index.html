@@ -10,18 +10,20 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <main>
+    <main id="home">
       <header class="header">
         <div class="content">
           <nav class="navbar">
-            <img src="./assets/img/Logo.svg" alt="Real Landing Page" />
+            <a href="#home"
+              ><img src="./assets/img/Logo.svg" alt="Real Landing Page"
+            /></a>
 
             <ul>
-              <li><a href="#!">Home</a></li>
-              <li><a href="#!">Features</a></li>
-              <li><a href="#!">Services</a></li>
-              <li><a href="#!">Resources</a></li>
-              <li><a href="#!">Contact</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#featured">Features</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#resources">Resources</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
 
             <div class="actions">
@@ -66,36 +68,26 @@
             <p class="desc">5 Star Ratings (2k+ Review)</p>
           </div>
           <div class="images">
-            <img
-              src="./assets/img/client-1.svg"
-              alt="Client"
-              class="client-image"
-            />
-            <img
-              src="./assets/img/client-2.svg"
-              alt="Client"
-              class="client-image"
-            />
-            <img
-              src="./assets/img/client-3.svg"
-              alt="Client"
-              class="client-image"
-            />
-            <img
-              src="./assets/img/client-4.svg"
-              alt="Client"
-              class="client-image"
-            />
-            <img
-              src="./assets/img/client-5.svg"
-              alt="Client"
-              class="client-image"
-            />
+            <a href="#!">
+              <img src="./assets/img/client-1.svg" alt="Client" />
+            </a>
+            <a href="#!">
+              <img src="./assets/img/client-2.svg" alt="Client" />
+            </a>
+            <a href="#!">
+              <img src="./assets/img/client-3.svg" alt="Client" />
+            </a>
+            <a href="#!">
+              <img src="./assets/img/client-4.svg" alt="Client" />
+            </a>
+            <a href="#!">
+              <img src="./assets/img/client-5.svg" alt="Client" />
+            </a>
           </div>
         </div>
       </div>
 
-      <div class="guides">
+      <div id="resources" class="guides">
         <div class="content">
           <h2 class="sub-title">How its works?</h2>
           <p class="desc">
@@ -134,7 +126,7 @@
         </div>
       </div>
 
-      <div class="featured">
+      <div id="featured" class="featured">
         <div class="content">
           <header>
             <h2 class="sub-title">Featured Properties</h2>
@@ -227,7 +219,7 @@
         </div>
       </div>
 
-      <div class="stats">
+      <div id="service" class="stats">
         <div class="content">
           <div class="row">
             <div class="img-block">
@@ -392,7 +384,7 @@
         </div>
       </div>
 
-      <div class="footer">
+      <div id="contact" class="footer">
         <div class="content">
           <div class="row row-top">
             <div class="column">
@@ -444,7 +436,9 @@
           </div>
           <div class="row row-bottom">
             <div class="column">
-              <img src="./assets/img/Logo.svg" alt="" class="logo" />
+              <a href="#home"
+                ><img src="./assets/img/Logo.svg" alt="" class="logo"
+              /></a>
             </div>
             <p class="copyright column">
               Copyright 2020.com, All rights reserved
